@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ES2020",                         /* Enable support for top-level await */
+    "lib": ["ESNext"],                          /* Include necessary library declarations for ESNext features */
+
+    /* Modules */
+    "module": "ESNext",                         /* Use ES modules to allow import.meta.url and top-level await */
+    "moduleResolution": "Node",                 /* Resolve modules the same way Node.js does */
+    "resolveJsonModule": true,                  /* Allow importing .json files */
+    "allowJs": true,                            /* Permit importing or including JavaScript files */
+
+    /* Emit */
+    "outDir": "./dist",                         /* Specify an output folder for all emitted files */
+    "esModuleInterop": true,                    /* Emit helpers for easier CommonJS default imports */
+    "forceConsistentCasingInFileNames": true,   /* Ensure correct casing in imports */
+    "skipLibCheck": true,                       /* Skip type checking of declaration files */
+
+    /* Type Checking */
+    "strict": true                              /* Enable all strict type-checking options */
+  },
+  "include": ["./**/*.ts"],
+  "exclude": ["node_modules"]
+}
