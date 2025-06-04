@@ -6,7 +6,9 @@ import meetingRoutes from './routes/meetings';
 import memberRoutes from './routes/members'
 import userRoutes from './routes/users'
 import morgan from 'morgan';
-import uploadRoutes from './routes/upload.routes'
+import uploadRoutes from './routes/upload.routes';
+import csvRoutes from './routes/csv.routes'
+
 
 
 dotenv.config();
@@ -20,6 +22,7 @@ app.use('/meetings', meetingRoutes);
 app.use('/members',memberRoutes)
 app.use('/users',userRoutes)
 app.use('/api', uploadRoutes)
+app.use("/csv", csvRoutes);
 
 
 
