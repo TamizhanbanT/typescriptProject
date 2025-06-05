@@ -8,6 +8,7 @@ import userRoutes from './routes/users'
 import morgan from 'morgan';
 import uploadRoutes from './routes/upload.routes';
 import csvRoutes from './routes/csv.routes'
+import htmlPdfRoutes from "./routes/htmlToPdf.routes";
 
 
 
@@ -23,6 +24,7 @@ app.use('/members',memberRoutes)
 app.use('/users',userRoutes)
 app.use('/api', uploadRoutes)
 app.use("/csv", csvRoutes);
+app.use("/pdf", htmlPdfRoutes);
 
 
 

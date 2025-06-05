@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-Task</title>
+    <!-- Link to Bootstrap CSS for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+
+
+<body>
+    <!-- Navigation tabs -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <!-- Today's Engagement Tab -->
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="today-tab" data-bs-toggle="tab" data-bs-target="#today-tab-pane" type="button" role="tab" aria-controls="today-tab-pane" aria-selected="true">Today's Engagement</button>
+        </li>
+
+
+        <!-- Future Engagement Tab -->
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="future-tab" data-bs-toggle="tab" data-bs-target="#future-tab-pane" type="button" role="tab" aria-controls="future-tab-pane" aria-selected="false">Future Engagement</button>
+        </li>
+
+        <!-- Total Engagement Tab -->
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="total-tab" data-bs-toggle="tab" data-bs-target="#total-tab-pane" type="button" role="tab" aria-controls="total-tab-pane" aria-selected="false">Total Engagement</button>
+        </li>
+      </ul>
+
+      <!-- Tab Content -->
+
+
+      <div class="tab-content" id="myTabContent">
+
+
+        <!-- Today's Engagement Content -->
+        <div class="tab-pane fade show active" id="today-tab-pane" role="tabpanel" aria-labelledby="today-tab" tabindex="0">
+            <div class="mx-3 mt-2 p-3 border-primary border-start border-3 shadow-lg bg-body-tertiary rounded ">
+                
+              <div class="d-flex justify-content-between ">
+                    <div>
+                        <p>ID: 217</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-outline-primary text-secondary">Live in Office</button>
+                        <button class="btn btn-outline-warning text-secondary">Awaiting TLL Approval</button>
+                    </div>
+               
+               
+                  </div>
+                <p><strong>Unbranded Speaker Presentation +2</strong></p>
+                <p class="text-dark">SHIONOGI <span class="text-success fs-3">&gt;</span> Fetroja<sup>®</sup>(cefiderocol)<sup>
+                  <span class="text-danger">PI</span></sup></p>
+                <hr>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <p class="m-0"><strong>EO : </strong>Sean Gully</p>
+                        <p class="m-0"><strong>Speaker : </strong>Malai Appan, Christopher Cooper</p>
+                        <p class="text-success m-0">Attendees Invited : 1</p>
+                        <p class="m-0"><strong>Attendees Confirmed : </strong>0</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-success fs-6 px-3">Time Zone Review</button>
+                        <p class="m-0">May 6, 2025</p>
+                        <p class="m-0">6:00 AM ET</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Future Engagement Content -->
+        <div class="tab-pane fade" id="future-tab-pane" role="tabpanel" aria-labelledby="future-tab" tabindex="0">
+            <!-- Bootstrap Card for Future Engagement -->
+            <div class="card mx-3 mt-3">
+                <div class="card-header">
+                    <h5>Upcoming Engagement</h5>
+                </div>
+                <div class="card-body">
+                    <p><strong>Engagement ID: 218</strong></p>
+                    <p><strong>Topic: </strong>Backend</p>
+                    <p><strong>Speaker: </strong>Tam</p>
+                    <p><strong>Date: </strong>May 20, 2025</p>
+                    <p><strong>Location: </strong>Madurai</p>
+                    <button class="btn btn-primary">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total Engagement Content -->
+        <div class="tab-pane fade" id="total-tab-pane" role="tabpanel" aria-labelledby="total-tab" tabindex="0">
+            <!--Total Engagements -->
+            <div class="container mt-3">
+                <h4>Total Engagements</h4>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Topic</th>
+                            <th scope="col">Speakers</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>217</td>
+                            <td>Unbranded Speaker Presentation +2</td>
+                            <td>Malai Appan, Christopher Cooper</td>
+                            <td>May 6, 2025</td>
+                            <td>US</td>
+                        </tr>
+                        <tr>
+                            <td>218</td>
+                            <td>Backend</td>
+                            <td>Tam</td>
+                            <td>May 20, 2025</td>
+                            <td> Madurai</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+    
+
+    <!-- Bootstrap JS Bundle  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" 
+    crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
