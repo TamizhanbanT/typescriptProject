@@ -9,7 +9,6 @@ const __dirname = path.dirname(__filename);
 // Path to uploads directory
 const uploadDir = path.join(__dirname, "../uploads");
 
-
 cron.schedule("* * * * *", () => {
   //console.log(" Running scheduled cleanup...");
 
@@ -32,7 +31,7 @@ cron.schedule("* * * * *", () => {
         if (age > 24 * 60 * 60 * 1000) {
           fs.unlink(filePath, (err) => {
             if (err) return console.error(`Failed to delete ${file}`, err);
-            console.log(`🗑️ Deleted old file: ${file}`);
+            console.log(` Deleted old file: ${file}`);
           });
         }
       });
