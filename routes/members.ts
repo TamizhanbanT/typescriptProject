@@ -22,8 +22,7 @@
 import express, { Request, Response, Router } from 'express';
 import controller from '../controllers/memberController';
 
-const router: Router = express.Router();
-
+const router: Router = express.Router()
 /**
  * @swagger
  * tags:
