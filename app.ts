@@ -13,12 +13,12 @@ import csvRoutes from './routes/csv.routes';
 import htmlPdfRoutes from './routes/htmlToPdf.routes';
 import cleanupRoutes from './routes/cleanupRoutes';
 
-//  Cron Job Import
+// 🔹 Cron Job Import
 import './cron/cleanup.cron';
 
 //  Swagger Imports
 import swaggerUi from 'swagger-ui-express';
-import swaggerSpec from './swagger/swagger'; // 
+import swaggerSpec from './swagger/swagger'; // ✅ Use the JS object, not YAML
 
 // Initialize App & Environment
 dotenv.config();

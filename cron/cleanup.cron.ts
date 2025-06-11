@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 const uploadDir = path.join(__dirname, "../uploads");
 
 cron.schedule("* * * * *", () => {
-  //console.log(" Running scheduled cleanup...");
+  // console.log(" Running scheduled cleanup...");
 
   fs.readdir(uploadDir, (err, files) => {
     if (err) {
@@ -29,6 +29,7 @@ cron.schedule("* * * * *", () => {
 
         // Delete files older than 1 day
         if (age > 24 * 60 * 60 * 1000) {
+        // if (age > 1 * 60 * 1000) {
           fs.unlink(filePath, (err) => {
             if (err) return console.error(`Failed to delete ${file}`, err);
             console.log(` Deleted old file: ${file}`);
